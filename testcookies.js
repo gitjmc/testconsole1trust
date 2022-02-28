@@ -2,6 +2,7 @@ function setCookie(cname,cvalue,exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   let expires = "expires=" + d.toUTCString();
+
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   document.cookie = "DESJ_PREF=Langue:fr, Province:QC;" + expires + ";path=/";
   document.cookie = "dropDownSliderAccueil=ON;" + expires + ";path=/";
@@ -25,7 +26,7 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  
+
   let user = getCookie("username");
   if (user != "") {
      alert("Welcome again " + user);
