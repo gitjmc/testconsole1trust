@@ -2,13 +2,7 @@ function setCookie(cname,cvalue,exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   let expires = "expires=" + d.toUTCString();
-
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  document.cookie = "DESJ_PREF=Langue:fr, Province:QC;" + expires + ";path=/";
-  document.cookie = "dropDownSliderAccueil=ON;" + expires + ";path=/";
-  document.cookie = "identifiant-anonyme=26654def-04a3-4507-9a1e-54e73bcfa5cb;" + expires + ";path=/";
-  document.cookie = "fb-pixel=hjy54ed6-04a3-4507-9a1e-54e73bcfa5cb;" + expires + ";path=/";
-  document.cookie = "pc-about=1;" + expires + ";path=/";
 }
 
 function getCookie(cname) {
@@ -37,14 +31,18 @@ function checkCookie() {
     user = "Chamceddine";
     if (user != "" && user != null) {
       setCookie("username", user, 30);            
-    }
-  }
-  // icrémenter la page index
-  // Supprimons l'éventuel dernier slash de l'URL
-  // var urlcourante = urlcourante.replace(/\/$/, "");
-  // // Gardons dans la variable queue_url uniquement la portion derrière le dernier slash de urlcourante
-  // queue_url = urlcourante.substring (urlcourante.lastIndexOf( "/" )+1 );
-  // alert (' Queue URL : \n' + queueurl);
+      setCookie("DESJ_PREF", "Langue:fr, Province:QC",15);
+      setCookie("dropDownSliderAccueil", "OFF",20);
+      setCookie("identifiant-anonyme", "26654def-04a3-4507-9a1e-54e73bcfa5cb",20);
+      setCookie("fb-pixel", "hjy54ed6-04a3-4507-9a1e-54e73bcfa5cb",150);
+      setCookie("nbrPageVisit", "0",365);
+    }  
+  }  
 
+  let npv = getCookie("nbrPageVisit");
+  if ( npv !="" ){    
+    npv++;
+    setCookie("nbrPageVisit", npv,365);
+  }
 
 }      
