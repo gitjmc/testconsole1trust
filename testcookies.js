@@ -25,13 +25,16 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
+  
   let user = getCookie("username");
   if (user != "") {
-    alert("Welcome again " + user);
+     alert("Welcome again " + user);
   } else {
-    user = prompt("Please enter your name:","");
+    // user = prompt("Please enter your name:","");
+    user = "Chamceddine";
     if (user != "" && user != null) {
       setCookie("username", user, 30);            
     }
   }
+
 }      
