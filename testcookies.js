@@ -7,6 +7,8 @@ function setCookie(cname,cvalue,exdays) {
   document.cookie = "DESJ_PREF=Langue:fr, Province:QC;" + expires + ";path=/";
   document.cookie = "dropDownSliderAccueil=ON;" + expires + ";path=/";
   document.cookie = "identifiant-anonyme=26654def-04a3-4507-9a1e-54e73bcfa5cb;" + expires + ";path=/";
+  document.cookie = "fb-pixel=hjy54ed6-04a3-4507-9a1e-54e73bcfa5cb;" + expires + ";path=/";
+  document.cookie = "pc-about=1;" + expires + ";path=/";
 }
 
 function getCookie(cname) {
@@ -37,5 +39,12 @@ function checkCookie() {
       setCookie("username", user, 30);            
     }
   }
+  // icrémenter la page index
+  // Supprimons l'éventuel dernier slash de l'URL
+  // var urlcourante = urlcourante.replace(/\/$/, "");
+  // // Gardons dans la variable queue_url uniquement la portion derrière le dernier slash de urlcourante
+  // queue_url = urlcourante.substring (urlcourante.lastIndexOf( "/" )+1 );
+  // alert (' Queue URL : \n' + queueurl);
+
 
 }      
