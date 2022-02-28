@@ -25,13 +25,27 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
+
+  // const d = new Date();
+  // d.setTime(d.getTime() + (5*24*60*60*1000));
+  // let expires = "expires=" + d.toUTCString();
+  
+  // let regPref = getCookie("DESJ_PREF");
+  // if (regPref != "" && regPref != null) {
+  //   document.cookie = "DESJ_PREF=Langue:fr, Province:QC;" + expires + ";path=/";            
+  // }
+
+  
+  
   let user = getCookie("username");
   if (user != "") {
-    alert("Welcome again " + user);
+     alert("Welcome again " + user);
   } else {
-    user = prompt("Please enter your name:","");
+    // user = prompt("Please enter your name:","");
+    user = "Chamceddine";
     if (user != "" && user != null) {
       setCookie("username", user, 30);            
     }
   }
+
 }      
