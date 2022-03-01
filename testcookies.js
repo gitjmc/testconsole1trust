@@ -35,14 +35,14 @@ function checkCookie() {
       setCookie("dropDownSliderAccueil", "OFF",20);
       setCookie("identifiant-anonyme", "26654def-04a3-4507-9a1e-54e73bcfa5cb",20);
       setCookie("fb-pixel", "hjy54ed6-04a3-4507-9a1e-54e73bcfa5cb",150);
-      setCookie("nbrPageVisit", "0",365);
+      setCookie("nbrOfVisitsHomePage", "0",365);
     }  
   }  
 
-  let npv = getCookie("nbrPageVisit");
+  let npv = getCookie("nbrOfVisitsHomePage");
   if ( npv !="" ){    
     npv++;
-    setCookie("nbrPageVisit", npv,365);
+    setCookie("nbrOfVisitsHomePage", npv,365);
   }
 
 }      
