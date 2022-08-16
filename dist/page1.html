@@ -14,10 +14,10 @@
         function OptanonWrapper() { }
       </script>
     <!-- OneTrust Cookies Consent Notice end for gitjmc.github.io/testconsole1trust/ -->
-    <script type="text/plain" src="testCookiesPage1.js" class="optanon-category-C0002"></script>      
+    <script type="text/plain" src="testCookiesPage1.js" class="optanon-category-C0001"></script>      
   </head>
   
-  <body onload="testme()"> 
+  <body onload="checkCookie()"> 
     <h1>Page 1</h1>
     <h3>Sous titre h3 ...</h3>
     <a href="https://gitjmc.github.io/testconsole1trust">Home</a>
@@ -26,44 +26,5 @@
     <!-- <a href="http://127.0.0.1:5500/dist/">Home</a>     -->
 
 
-    <script>
-      function testme() {
-        alert("Page is loaded");
-      }
-
-      function setCookie(cname, cvalue, exdays) {
-  const d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  let expires = "expires=" + d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
-function checkCookie() {
-  let user = getCookie("DESJ_PREF");
-  if (user != "") {
-     alert("Welcome again " + user);
-  } else {
-    if (user != "" && user != null) {
-      setCookie("DESJ_PREF", "Langue:fr, Province:QC",15);
-    }  
-  }  
-
-      </script>  
   </body>
 </html>
