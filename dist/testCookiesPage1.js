@@ -22,26 +22,18 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  let user = getCookie("username");
+  let user = getCookie("DESJ_PREF");
   if (user != "") {
      alert("Welcome again " + user);
   } else {
-    // user = prompt("Please enter your name:","");
-    user = "Chamceddine";
     if (user != "" && user != null) {
-      setCookie("username", user, 30);            
       setCookie("DESJ_PREF", "Langue:fr, Province:QC",15);
-      setCookie("dropDownSliderAccueil", "OFF",20);
-      setCookie("identifiant-anonyme", "26654def-04a3-4507-9a1e-54e73bcfa5cb",20);
-      setCookie("fb-pixel", "hjy54ed6-04a3-4507-9a1e-54e73bcfa5cb",150);
-      setCookie("nbrOfVisitsHomePage", "0",365);
     }  
   }  
 
-  let npv = getCookie("nbrOfVisitsHomePage");
+  let npv = getCookie("nbrOfVisitsPage1");
   if ( npv !="" ){    
     npv++;
-    setCookie("nbrOfVisitsHomePage", npv,365);
+    setCookie("nbrOfVisitsPage1", npv,365);
   }
-
 }      
