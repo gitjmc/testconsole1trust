@@ -1,17 +1,9 @@
-function checkCookie() {
-  let user = getCookie("DESJ_PREF");
+function p1c1cat1() {
+  let user = getCookie("P1-cookie-cat1");
   console.log(user);
   if (user != "") {
-     alert("Welcome again " + user);
+    alert("Le cookie existe");
   } else {
-    //if (user != "" && user != null) {
-      setCookie("DESJ_PREF", "Langue:fr, Province:QC",15);
-    //}  
+    setCookie("P1-cookie-cat1", "Langue:fr, Province:QC",15);
   }  
-
-  let npv = getCookie("nbrOfVisitsPage1");
-  if ( npv !="" ){    
-    npv++;
-    setCookie("nbrOfVisitsPage1", npv,365);
-  }
-}      
+}
