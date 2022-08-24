@@ -8,23 +8,37 @@
 
     <!-- OneTrust Cookies Consent Notice start for gitjmc.github.io/testconsole1trust/ -->
     <script  src="https://www.rafaelolivasantos.com/testcookie/D1.js" script="19cbe336-7778-4251-b28c-362efd898a78-test"></script>
-
-    <!-- <script src=https://cdn.cookielaw.org/scripttemplates/otSDKStub.js  type="text/javascript" charset="UTF-8" data-domain-script="19cbe336-7778-4251-b28c-362efd898a78-test" ></script> -->
-      <script type="text/javascript">
-        function OptanonWrapper() { }
-      </script>
+      <script type="text/javascript">function OptanonWrapper() { }</script>
     <!-- OneTrust Cookies Consent Notice end for gitjmc.github.io/testconsole1trust/ -->
-    <script type="text/plain" src="testCookiesPage2.js" class="optanon-category-C0003"></script>
+
+    <script type="text/javascript" src="communCookies.js"></script>
+    <script type="text/plain" src="addcookie-Cat1.js" class="optanon-category-C0001"></script>
+    <script type="text/plain" src="addcookie-Cat2.js" class="optanon-category-C0002"></script>
+    <script type="text/plain" src="addcookie-Cat3.js" class="optanon-category-C0003"></script>
+    <script type="text/plain" src="addcookie-Cat4.js" class="optanon-category-C0004"></script>
+    <script type="text/plain" src="addcookie-Cat5.js" class="optanon-category-C0005"></script>
     
   </head>
   <body>
-    <h1>Page 2</h1>
-    <h3>Sous titre h3 ...</h3>
-    <a href="https://gitjmc.github.io/testconsole1trust">Home</a>
-    <a href="https://gitjmc.github.io/testconsole1trust/about">About</a>
-    <a href="https://gitjmc.github.io/testconsole1trust/page1">Page 1</a>
-  
+    <h1>Page 2 - pour effectuer qq tests ...</h1>
+    <p>Script OT du domaine cdom.ca <b>test</b> - via la couche intermédiare (Raf)</p>
+    <ul>
+      <li><a href="https://gitjmc.github.io/testconsole1trust/index">index</a></li>
+      <li><a href="https://gitjmc.github.io/testconsole1trust/about">About</a></li>
+      <li><a href="https://gitjmc.github.io/testconsole1trust/page1">Page 1</a></li>
+      <li><a href="https://gitjmc.github.io/testconsole1trust/index-t">index-t</a></li>
+      <li><a href="https://gitjmc.github.io/testconsole1trust/page3">Page 3</a></li>
+    </ul>
     <!-- <a href="http://127.0.0.1:5500/dist/">Home</a>     -->
+  
+    <h3>Exécuter les cookies</h3>
+  
+    <p><input type = "button" onclick="p1c1cat1()" value="add cookie-1 if not exist (C0001-Essentiel)"></p>
+    <p><input type = "button" onclick="p1c2cat2()" value="add cookie-2 if not exist (C0002-Performance)"></p>
+    <p><input type = "button" onclick="p1c3cat3()" value="add cookie-3 if not exist (C0003-Personnalisation)"></p>
+    <p><input type = "button" onclick="p1c4cat4()" value="add cookie-4 if not exist (C0004-Publicite ciblee)"></p>
+    <p><input type = "button" onclick="p1c5cat5()" value="add cookie-5 if not exist (C0005-Publicite ciblee)"></p>
+
   </body>
   
 </html>
