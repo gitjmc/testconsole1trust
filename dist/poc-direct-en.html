@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Direct call</title>  
+    <script 
+      src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" 
+      data-document-language="true" 
+      type="text/javascript" 
+      charset="UTF-8" 
+      data-domain-script="e9872dc2-14af-4d30-b0e9-01b95a0b9ab1-test" >
+    </script>
+    <script type="text/javascript">
+    function OptanonWrapper() { }
+    </script>
+
+
+    <script type="text/javascript" src="js/communCookies.js"></script>
+
+    <script type="text/plain" src="js/addcookie-Cat1.js" class="optanon-category-C0001"></script>
+    <script type="text/plain" src="js/addcookie-Cat2.js" class="optanon-category-C0002"></script>
+    <script type="text/plain" src="js/addcookie-Cat3.js" class="optanon-category-C0003"></script>
+    <script type="text/plain" src="js/addcookie-Cat4.js" class="optanon-category-C0004"></script>
+    <script type="text/plain" src="js/addcookie-Cat5.js" class="optanon-category-C0005"></script>
+    
+    <script type="text/plain" src="js/addcookie-Cat1A.js" class="optanon-category-C0001"></script>
+    <script type="text/plain" src="js/addcookie-Cat2A.js" class="optanon-category-C0002"></script> 
+    <script type="text/plain" src="js/addcookie-Cat3A.js" class="optanon-category-C0003"></script>
+    <script type="text/plain" src="js/addcookie-Cat4A.js" class="optanon-category-C0004"></script>	
+    <script type="text/plain" src="js/addcookie-Cat5A.js" class="optanon-category-C0005"></script>
+  
+  </head>
+  <body>
+
+    <h1>Page de test ... EN</h1>
+    <p>Script OT du domaine d.com <b>test</b> - Direct call to OT</p>
+    <hr>
+      <ul>
+        <li><a href="poc-direct-fr.html">FR</a></li>
+      </ul>
+    <hr>
+    <ul>
+      <li><a href="poc-static-en.html">Call OT services via desjardins proxy</a></li>
+      <li><a href="poc-raf-en.html">Call OT services via RAF proxy</a></li>
+    </ul>
+
+    <h3>Execute cookie on click</h3>
+    <p><input type = "button" onclick="addCookieTest1('cookie-cat1')" value="add cookie-1 if not exist (C0001-Essentiel)"></p>
+    <p><input type = "button" onclick="addCookieTest2('cookie-cat2')" value="add cookie-2 if not exist (C0002-Performance)"></p>
+    <p><input type = "button" onclick="addCookieTest3('cookie-cat3')" value="add cookie-3 if not exist (C0003-Personnalisation)"></p>
+    <p><input type = "button" onclick="addCookieTest4('cookie-cat4')" value="add cookie-4 if not exist (C0004-Publicite ciblee)"></p>
+    <p><input type = "button" onclick="addCookieTest5('cookie-cat5')" value="add cookie-5 if not exist (C0005-Social media)"></p>
+
+    <hr>
+    <a class="consentRedirect" href="http://www.rafaelolivasantos.com/testcookie/Page1A.html">Click Here to test the cross-domain (raf domain)</a> 
+    <hr>
+    <button id="ot-sdk-btn" class="ot-sdk-show-settings">Personalize your choices</button>
+    <a href="#" class="optanon-toggle-display">Personalize your choices</a>
+    <hr>
+
+  </body>
+  
+</html>
