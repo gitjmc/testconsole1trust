@@ -1,7 +1,8 @@
-  let user2 = getCookie("P1-cookie-cat2");
-  console.log(user2);
+const cookieName2 = "cookie-cat2-P";
+let user2 = getCookie(cookieName2);  
   if (user2 != "") {
-    alert("Le cookie existe");
+    alert("Le cookie " + cookieName2 + " existe");
   } else {
-    setCookie("P1-cookie-cat2", "Langue:fr, Province:QC",15);
+    setCookie(cookieName2, "Created by the page!",15);
+    console.log(cookieName2 + " Created by the page!");
 	}  

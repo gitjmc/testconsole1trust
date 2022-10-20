@@ -1,9 +1,9 @@
-function p1c1cat1() {
-  let user = getCookie("P1-cookie-cat1");
+function addCookieTest1(cookieName) {
+  let user = getCookie(cookieName);
   console.log(user);
   if (user != "") {
-    alert("Le cookie existe");
+    alert("Le cookie " + cookieName + " existe!");
   } else {
-    setCookie("P1-cookie-cat1", "Langue:fr, Province:QC",15);
+    setCookie(cookieName, "Created by click",15);
   }  
 }
